@@ -187,4 +187,3 @@ url5 = url5.format(id=id, nsp_str=nsp_str)
 response5 = requests.get(url5, headers=headers5, verify=False, allow_redirects=False)
 
 time.sleep(10)
-input("Press Enter to exit...")
